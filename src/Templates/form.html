@@ -1,0 +1,18 @@
+<form action="/jo<?= ($data != false) ? "/" . (string)$data->_id : '' ?>" method="post">
+    Nom : <input type="text" name="nom" value="<?= ($data)? $data->nom :"" ?>" />
+    Prenom : <input type="text" name="prenom" value = "<?= ($data) ? $data->prenom : "" ?>"/>
+    Genre : <select name="genre">
+        <option <?= ($data && $data->genre == "M") ? "selected"  : ""  ?> value="M">M</option>
+        <option <?= ($data && $data->genre == "F") ? "selected" : "" ?> value="F">F</option>
+    </select>
+    Sport : <input type="text" name="sport" value="<?= ($data)? $data->sport :"" ?>" />
+    Médaille : <select name="medaille">
+        <option <?= ($data && $data->medaille == "or") ? "selected" : "" ?> value="or">Or</option>
+        <option <?= ($data && $data->medaille == "argent") ? "selected" : "" ?> value="argent">Argent</option>
+        <option <?= ($data && $data->medaille == "bronze") ? "selected" : "" ?> value="bronze">Bronze</option>
+        <option <?= ($data && $data->medaille == "chocolat") ? "selected" : "" ?> value="chocolat">Chocolat</option>
+    </select>
+
+    <input type="hidden" name="_method" value="<?= ($data) ? "PUT" : "POST" ?>" />
+    <button>envoyer</button>
+</form>

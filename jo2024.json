@@ -1,0 +1,26 @@
+[
+    {
+        "nom": "Dupont",
+        "prenom": "Antoine",
+        "genre": "M",
+        "age" : 27,
+        "sport": "rugby",
+        "medaille" : "or"
+    },
+    {
+        "nom": "Marchand",
+        "prenom": "Leon",
+        "genre": "M",
+        "age":22,
+        "sport": "natation",
+        "medaille" : "or"
+    },
+    {
+        "nom": "Riner",
+        "prenom": "Teddy",
+        "genre": "M",
+        "age":35,
+        "sport": "judo",
+        "medaille" : "or"
+    }
+]

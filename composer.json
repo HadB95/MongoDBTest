@@ -1,0 +1,17 @@
+{
+    "name": "1502534/test-mongo-db",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "testmongodb",
+            "email": "philippe.viguier@afpa.fr"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^1.19"
+    }
+}

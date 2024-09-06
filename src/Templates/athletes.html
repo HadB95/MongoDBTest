@@ -1,0 +1,28 @@
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Genre</th>
+        <th>Sport</th>
+        <th>Medaille</th>
+        <th>Modifier</th>
+        <th>Supprimer</th>
+        
+    </tr>
+    <?php foreach ($athletes as $athlete) : ?>
+        <tr>
+            <td><?= $athlete->nom ?></td>
+            <td><?= $athlete->prenom ?></td>
+            <td><?= $athlete->genre ?></td>
+            <td><?= $athlete->sport ?></td>
+            <td><?= $athlete->medaille ?></td>
+            <td><a href="/jo/<?= $athlete->_id ?>/edit">Modifier</a></td>
+            <td>
+                <form action="jo/<?= $athlete->_id ?>" method="post">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button>supp</button>
+                </form>
+            </td>
+        </tr>
+    <?php endforeach ?>
+</table>
